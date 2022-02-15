@@ -9,7 +9,7 @@ class functionalTestCase(TestCase):
         self.browser=webdriver.Firefox()
     def tearDown(self):
         self.browser.quit()
-    def test_ther_is_homepage(self):
+    def test_there_is_homepage(self):
         self.browser.get("http://localhost:8000")
         self.assertIn("Enter hash here",self.browser.page_source)
 
